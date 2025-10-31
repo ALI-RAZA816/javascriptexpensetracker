@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./fontawesome.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fields-box">
+            <form action="" class="form">
+                <div class="box box-1">
+                    <span>Budget</span>
+                    <input type="number" placeholder="Enter total Amount" id="totalAmountField">
+                    <span id="errMsg1">Field can't be empty</span>
+                    <button id="setBudget">Set Budget</button>
+                </div>
+                <div class="box box-1">
+                    <span>Expenses</span>
+                    <input type="text" placeholder="Enter title of Product" id="productTitleField">
+                    <input type="number" placeholder="Enter cost of product" id="productAmountField">
+                    <span id="errMsg2">Field can't be empty</span>
+                    <span id="errMsg3">Insufficient Balance</span>
+                    <button id="checkAmount">Check Amount</button>
+                </div>
+            </form>
+        </div>
+        <div class="historyContainer">
+            <div class="history">
+                <div class="total">
+                    <span>Total Budget</span>
+                    <span id="totalBudget">$ 0</span>
+                </div>
+                <div class="total">
+                    <span>Expense</span>
+                    <span id="totalExpense">$ 0</span>
+                </div>
+                <div class="total">
+                    <span>Balance</span>
+                    <span id="balance">$ 0</span>
+                </div>
+            </div>
+            <div class="result" id="resultDiv">
+                <span>Expense List</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
