@@ -82,13 +82,14 @@ const budget = () => {
 const expense = () => {
     let title = productTitleField.value;
     let amount = Number(productAmountField.value);
-    if (!totalBalance || totalBalance == null || Number(productAmountField.value) > totalBalance) {
-        errMsg3.style.display = 'block';
-        return;
-    }
 
     if (!title || !amount) {
         errMsg2.style.display = 'block';
+        return;
+    }
+    
+    if (!totalBalance || totalBalance == null || Number(productAmountField.value) > totalBalance) {
+        errMsg3.style.display = 'block';
         return;
     }
 
